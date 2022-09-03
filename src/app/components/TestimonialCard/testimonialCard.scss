@@ -1,0 +1,22 @@
+.testimonial-card {
+    
+    .card-header {
+        border-bottom: none !important;
+        background-color: transparent;
+    }
+
+    .testimonial-body {
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
+    .card-avatar {
+        border-radius: 90px;
+    }
+}
+
+@media only screen and(max-width: 800px) {
+    .testimonial-card {
+        width: 90vw;
+    }
+}

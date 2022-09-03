@@ -1,0 +1,13 @@
+footer {
+    height: 22vh;
+
+    .line-wrapper {
+        display: flex;
+
+        .line{
+            margin: auto;
+            border-top: 2px solid #4f4d4d;
+            width: 65%;
+        }
+    }
+}
