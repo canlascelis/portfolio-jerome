@@ -28,7 +28,7 @@ const Home = (props) => {
                 
                     <div className="recent-img justify-content-around row">
                         <img src={RecentProj1} alt="Calculator" className="col-lg-6" />
-                        <img src={RecentProj2} alt="Convx" className="col-lg-6 2D Game Preview" />
+                        <img src={RecentProj2} alt="Game-prev" className="col-lg-6 2D Game Preview" />
                     </div>
                 </div>
             </div>
