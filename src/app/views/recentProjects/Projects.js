@@ -1,9 +1,7 @@
 import './projects.scss';
 import Crud from '../../../assets/images/simple-crud.png';
 import Calculator from '../../../assets/images/calculator-jeres.png';
-import Convx from '../../../assets/images/convx.png';
 import Game from '../../../assets/images/game-preview.png';
-import Portfolio from '../../../assets/images/portfolio.png';
 
 
 const RecentProject = () => {
@@ -22,22 +20,10 @@ const RecentProject = () => {
             link: 'https://calculator-jeres.herokuapp.com/'
         },
         {
-            title: 'Convx',
-            url: Convx,
-            description: "During my internship they task us to develop the Convx front-end using mockup design given to us",
-            link: '#'
-        },
-        {
             title: 'Adventure of Baji',
             url: Game,
             description: "During my 4th year college 1st semester, we have this prelim exam to create a game",
             link: '#'
-        },
-        {
-            title: '1st portfolio',
-            url: Portfolio,
-            description: "During my internship, I developed this portfolio",
-            link: 'https://portfolio-a3d78.web.app/'
         },
     ];
 

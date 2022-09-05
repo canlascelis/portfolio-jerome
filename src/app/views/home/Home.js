@@ -1,7 +1,7 @@
 import './home.scss';
 import Threejs from '../../components/Threejs/Threejs';
 import RecentProj1 from '../../../assets/images/calculator-jeres.png';
-import RecentProj2 from '../../../assets/images/convx.png';
+import RecentProj2 from '../../../assets/images/game-preview.png';
 import Resume from '../../../assets/pdf/Jeremiah-Celis-Resume.pdf';
 import Rate from '../../components/Rate/Rate';
 import ContactModal from '../../components/ContactModal/ContactModal';
@@ -28,7 +28,7 @@ const Home = (props) => {
                 
                     <div className="recent-img justify-content-around row">
                         <img src={RecentProj1} alt="Calculator" className="col-lg-6" />
-                        <img src={RecentProj2} alt="Convx" className="col-lg-6 convx" />
+                        <img src={RecentProj2} alt="Convx" className="col-lg-6 2D Game Preview" />
                     </div>
                 </div>
             </div>
