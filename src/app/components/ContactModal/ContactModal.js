@@ -30,7 +30,7 @@ const ContactModal = () => {
         e.preventDefault();
         const ReturnPromise = () => new Promise(resolve => setTimeout(resolve, 3000));
 
-        /* axios.post('https://jeres-api-pb.herokuapp.com/contact', formData)
+        axios.post('https://jeres-api-pb.herokuapp.com/contact', formData)
             .then(() => {
                 toast.promise(
                     ReturnPromise,
@@ -41,7 +41,7 @@ const ContactModal = () => {
                     })
                 e.target.reset()
             })
-            .catch(err => toast.error(err)) */
+            .catch(err => toast.error(err))
     }
 
     function handleInput(e) {
