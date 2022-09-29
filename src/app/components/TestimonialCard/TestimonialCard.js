@@ -1,14 +1,18 @@
 import React from 'react'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './testimonialCard.scss';
 import axios from 'axios';
 import jDoeImg from '../../../assets/images/img1.jpg';
 
 const TestimonialCard = () => {
+    const abortController = new AbortController();
     useEffect(() => {
         setTimeout(() => {
             getTestimonials();
         }, 900)
+        return() => {
+            abortController.abort()
+        }
     }, []);
 
     const [loading, setLoading] = useState(true);

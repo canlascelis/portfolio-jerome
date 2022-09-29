@@ -6,6 +6,7 @@ const ToastAlert = (props) => {
     const { Toast } = bootstrap;
     const [toast, setToast] = useState(false);
     const toastRef = useRef();
+    const abortController = new AbortController()
 
     useEffect(() => {
         let myToast = toastRef.current;
@@ -19,7 +20,9 @@ const ToastAlert = (props) => {
         } else {
             toast ? bsToast.show() : bsToast.hide()
         }
-
+        return () => {
+            abortController.abort()
+        }
     });
 
     return (

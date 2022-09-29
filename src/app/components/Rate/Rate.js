@@ -18,7 +18,7 @@ export default function Rating() {
         filled: 'skyblue',
         unfilled: 'grey'
     }
-
+    const abortController = new AbortController();
     useEffect(() => {
         checkIfAlreadyRated()
         setRandomId(randomString())
@@ -29,8 +29,11 @@ export default function Rating() {
                 setResults(res.data)
                 setTotalRated(res.data.length)
             })
-            .catch(err => toast.error(err))
-
+            .catch(err => toast.error(err));
+        // Anything in here is fired on component unmount
+        return() => {
+            abortController.abort()
+        }
     }, [currentValue])
 
     const handleClick = (value) => {
