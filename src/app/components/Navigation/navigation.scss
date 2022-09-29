@@ -1,0 +1,42 @@
+.navbar {
+    .navbar-brand {
+        .logo {
+            height: 40px;
+        }
+    }
+
+    .navbar-link {
+        display: flex;
+
+        .navbar-nav {
+            margin: auto;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: green !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 991px) {
+    .navbar-link {
+        flex-direction: column;
+        height: max-content;
+        
+        .nav-link, .btn {
+            font-size: 2.2rem !important;
+            margin: 10px !important;
+            padding: 0 !important;
+        }
+    }
+
+    .navbar-nav {
+        align-content: flex-start !important;
+    }
+}

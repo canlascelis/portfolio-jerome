@@ -1,0 +1,32 @@
+.active {
+    color: #87ceeb;
+}
+
+.inactive {
+    color: #808080;
+}
+
+.rating-total {
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.contact-link {
+    color: #464b51;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media only screen and(max-width: 800px){
+    .card {
+        display: flex;
+        width: 90vw !important;
+        align-items: center;
+    }
+}
+
+@media only screen and(min-width: 800px){
+    .card {
+        height: max-content;
+    }
+}
