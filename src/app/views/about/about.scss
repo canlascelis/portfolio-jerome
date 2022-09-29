@@ -1,0 +1,265 @@
+body {
+    scrollbar-width: thin;
+}
+
+.about-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            visibility: visible;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 11px;
+    }
+
+    &::-webkit-scrollbar-track-piece:end {
+        margin-bottom: 290px;
+    }
+
+    &::-webkit-scrollbar-track-piece:start {
+        margin-top: 63px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ffc83d9e;
+        visibility: hidden;
+        border-radius: 9px;
+    }
+
+    .link {
+        color: #262525 !important;
+        font-weight: 700;
+    }
+
+    .social-list {
+        list-style-type: none;
+
+        li {
+            margin: 20px 0px 20px 0px;
+
+            a {
+                color: #232222;
+                text-decoration: none;
+
+                background: linear-gradient(#212529 0 0) 0% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
+                transition: 0.2s, background-size 0.2s 0.2s;
+
+                &:hover {
+                    --d: 100%;
+                    background-position: 10% 100%;
+                    color: #fff;
+                    transition: 0.3s, background-position 0.3s, color 0.3s 0.3s;
+                    padding: 10px 10px 10px 10px;
+                }
+            }
+
+            &::before {
+                content: " \1F449";
+                margin-right: 13px;
+            }
+
+        }
+    }
+
+    .logos {
+        background-color: #cec8c8;
+        border-radius: 10px;
+        padding: 10px;
+        width: 6vw;
+        height: 60px;
+        transition: all linear 0.2s;
+
+        &:hover {
+            color: #ffc83d;
+            position: relative;
+            top: -10px;
+            background-color: unset;
+        }
+    }
+
+    .sticky-content {
+        position: sticky !important;
+        height: 70vh;
+        top: 7%;
+    }
+
+    .div {
+        height: 100vh;
+        background-color: #ffc83d;
+    }
+
+    .main-content {
+        background-color: #e7e1e17c;
+        border-radius: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+
+        //vertical ruler
+        &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #232222;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+
+            //circles in timeline
+            &::after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -17px;
+                background-color: white;
+                border: 5px solid #f6d256;
+                border-radius: 50%;
+                z-index: 1;
+                top: 15px;
+            }
+
+            // the actual content
+            .content {
+                padding: 20px 30px;
+                background-color: #e7e1e17c;
+                position: relative;
+                border-radius: 9px;
+            }
+        }
+
+        /* Place the container to the left */
+        .left {
+            left: -25%;
+
+            /* Add arrows to the left container (pointing right) */
+            &::before {
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 22px;
+                z-index: 1;
+                right: 30px;
+                border: medium solid grey;
+                border-width: 5px 0 5px 5px;
+                border-color: transparent transparent transparent grey;
+            }
+
+            &::after {
+                right: -13px;
+            }
+        }
+        /* Place the container to the right */
+        .right {
+            left: 25%;
+
+            /* Add arrows to the left container (pointing left) */
+            &::before {
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 15px;
+                z-index: 1;
+                left: 30px;
+                border: medium solid grey;
+                border-width: 5px 5px 5px 0;
+                border-color: transparent grey transparent transparent;
+            }
+
+            /* Fix the circle for containers on the right side */
+            &::after {
+                left: -13px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .about-section {
+            background-color: red !important;
+            position: absolute;
+        }
+
+        .title {
+            margin: 50px 0 20px 0 !important;
+        }
+
+        .sticky-content {
+            position: unset !important;
+            margin-bottom: -60%;
+        }
+
+        .main-content {
+            margin-top: 45% !important;
+        }
+
+        .logos {
+            justify-content: space-around;
+            margin: 20px 0px 0px 0px;
+            height: 50px;
+            width: 20vw;
+        }
+
+        /*.title {
+            margin-bottom: -400px !important;
+        } */
+
+        .timeline {
+            margin-top: -400px !important;
+
+            &::after {
+                left: 31px;
+            }
+
+            /* Full-width containers */
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+
+                /* Make sure that all arrows are pointing leftwards */
+                &::before {
+                    left: 50px;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent black transparent transparent;
+                }
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left::after,
+            .right::after {
+                left: 4px;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
+
+            .left {
+                left: 0%;
+            }
+        }
+    }
+}

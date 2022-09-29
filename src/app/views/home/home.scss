@@ -1,0 +1,74 @@
+.home {
+    .hire-wrapper {
+        height: 60vh;
+        display: flex;
+
+        .hire-content {
+            text-align: center;
+            margin: auto;
+
+            p {
+                max-width: 50ch;
+            }
+        }
+    }
+
+    .summary {
+        height: 60vh;
+    }
+}
+
+.recent-projects {
+    align-items: center;
+
+    a {
+        align-self: center;
+    }
+
+    .recent-img {
+        margin-top: 3%;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            height: 400px;
+            width: 500px;
+            transition: all .5s;
+            
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.rate-card {
+    height: 65vh;
+    border-radius: 25px !important;
+
+    img {
+        border-radius: 8%;
+    }
+
+    p {
+        max-width: 80ch;
+    }
+}
+
+.subtitle {
+    color: #ffc83d;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+figure {
+    text-align: center;
+}
+
+@media only screen and(max-width: 1000px) {
+    .rate-card {
+        height: max-content;
+    }
+}
