@@ -5,7 +5,7 @@ import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-sv
 const Footer = () => {
     return (
         <footer className="bg-dark text-center text-white">
-            <div className='row align-items-center container'>
+            <div className='row'>
                 <div className='line-wrapper my-4 col-12'><p className='line'></p></div>
                 <div className='col'>
                     <h6>Jeremiah Celis</h6>

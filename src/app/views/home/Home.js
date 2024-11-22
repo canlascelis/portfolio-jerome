@@ -33,7 +33,7 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <Rate/>
+            {/* /*<Rate/>*/}
             <ContactModal />
 
         </section>

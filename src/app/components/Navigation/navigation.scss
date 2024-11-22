@@ -7,11 +7,14 @@
 
     .navbar-link {
         display: flex;
+        font-weight: bold;
 
         .navbar-nav {
             margin: auto;
 
             .nav-item {
+                margin-right: 26px;
+
                 .nav-link {
                     font-size: 1.2rem;
 
