@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.34d82dc7.css",
-    "main.js": "/static/js/main.87429f04.js",
-    "static/media/game-preview.png": "/static/media/game-preview.a376021f11973d132a17.png",
-    "static/media/Jeremiah-Celis-Resume.pdf": "/static/media/Jeremiah-Celis-Resume.beea37f703f99984ac39.pdf",
-    "static/media/simple-crud.png": "/static/media/simple-crud.17d208fa77138e9f7377.png",
-    "static/media/me.png": "/static/media/me.be2236c6dc302e5c00a6.png",
-    "static/media/calculator-jeres.png": "/static/media/calculator-jeres.2d0efaa5cbd43a127d01.png",
-    "index.html": "/index.html",
-    "static/media/J-ICON.svg": "/static/media/J-ICON.b149c761fc4328c29f80c3de6b6ad551.svg",
-    "static/media/J-ICON-WHITE.svg": "/static/media/J-ICON-WHITE.875cb5fd55ec1b3f19c1315f2d7a7ca3.svg",
-    "main.34d82dc7.css.map": "/static/css/main.34d82dc7.css.map",
-    "main.87429f04.js.map": "/static/js/main.87429f04.js.map"
+    "main.css": "/portfolio-jerome/home/static/css/main.34d82dc7.css",
+    "main.js": "/portfolio-jerome/home/static/js/main.42b91d2c.js",
+    "static/media/game-preview.png": "/portfolio-jerome/home/static/media/game-preview.a376021f11973d132a17.png",
+    "static/media/Jeremiah-Celis-Resume.pdf": "/portfolio-jerome/home/static/media/Jeremiah-Celis-Resume.beea37f703f99984ac39.pdf",
+    "static/media/simple-crud.png": "/portfolio-jerome/home/static/media/simple-crud.17d208fa77138e9f7377.png",
+    "static/media/me.png": "/portfolio-jerome/home/static/media/me.be2236c6dc302e5c00a6.png",
+    "static/media/calculator-jeres.png": "/portfolio-jerome/home/static/media/calculator-jeres.2d0efaa5cbd43a127d01.png",
+    "index.html": "/portfolio-jerome/home/index.html",
+    "static/media/J-ICON.svg": "/portfolio-jerome/home/static/media/J-ICON.b149c761fc4328c29f80c3de6b6ad551.svg",
+    "static/media/J-ICON-WHITE.svg": "/portfolio-jerome/home/static/media/J-ICON-WHITE.875cb5fd55ec1b3f19c1315f2d7a7ca3.svg",
+    "main.34d82dc7.css.map": "/portfolio-jerome/home/static/css/main.34d82dc7.css.map",
+    "main.42b91d2c.js.map": "/portfolio-jerome/home/static/js/main.42b91d2c.js.map"
   },
   "entrypoints": [
     "static/css/main.34d82dc7.css",
-    "static/js/main.87429f04.js"
+    "static/js/main.42b91d2c.js"
   ]
 }
