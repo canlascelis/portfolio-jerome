@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'bg-dark dark-mode' : 'bg-light navbar-light'}`} role="navigation">
             <div className="container-fluid container">
                 {/* Navbar brand */}
-                <NavLink className="navbar-brand" to="/portfolio-jerome/home">
+                <NavLink className="navbar-brand" to="/portfolio-jerome/">
                     <img src={isDarkMode ? JiconWhite : Jicon} alt="logo" className="logo" height="56" />
                 </NavLink>
 
@@ -26,7 +26,7 @@ const Navbar = (props) => {
                 <div className="collapse navbar-collapse navbar-link" id="navbar-links">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink to='/portfolio-jerome/home' className="nav-link">Home</NavLink>
+                            <NavLink to='/portfolio-jerome/' className="nav-link">Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/portfolio-jerome/about' className="nav-link">About</NavLink>
