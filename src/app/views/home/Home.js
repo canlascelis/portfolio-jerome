@@ -5,6 +5,7 @@ import RecentProj2 from '../../../assets/images/game-preview.png';
 import Resume from '../../../assets/pdf/Jeremiah-Celis-Resume.pdf';
 // import Rate from '../../components/Rate/Rate';
 import ContactModal from '../../components/ContactModal/ContactModal';
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
     const isDarkMode = props.isDarkMode;
@@ -24,7 +25,7 @@ const Home = (props) => {
             <div className="recent-projects my-5 container">
                 <div className="row d-flex justify-content-around">
                     <h1 className="title col-lg-10">Recent projects</h1>
-                    <a href="/projects" className="btn btn-sm btn-warning col-lg-1">View more</a>
+                    <Link to="/portfolio-jerome/projects" className='btn btn-sm btn-warning col-lg-1'>View more</Link>
                 
                     <div className="recent-img justify-content-around row">
                         <img src={RecentProj1} alt="Calculator" className="col-lg-6" />

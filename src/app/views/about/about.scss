@@ -211,7 +211,7 @@ body {
         }
 
         .main-content {
-            margin-top: 45% !important;
+            margin-top: 53% !important;
         }
 
         .logos {
@@ -221,12 +221,8 @@ body {
             width: 20vw;
         }
 
-        /*.title {
-            margin-bottom: -400px !important;
-        } */
-
         .timeline {
-            margin-top: -400px !important;
+            margin-top: -322px !important;
 
             &::after {
                 left: 31px;
@@ -260,6 +256,12 @@ body {
             .left {
                 left: 0%;
             }
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        h1 {
+            font-size: 3rem;
         }
     }
 }

@@ -54,7 +54,7 @@ const ContactModal = () => {
             return (
                 <div className="modal-body">
                     <div><FontAwesomeIcon icon={faUser} /> <a href='mailto:canlascelis@gmail.com'>canlascelis@gmail.com</a>.</div>
-                    <div><FontAwesomeIcon icon={faPhone} /> <a href='tel:09959003488'>09959003488</a></div>
+                    <div className='mt-2'><FontAwesomeIcon icon={faPhone} /> <a href='tel:09959003488'>09959003488</a></div>
                 </div>
             )
         } else {
