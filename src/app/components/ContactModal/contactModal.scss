@@ -1,7 +1,8 @@
 .modal {
     background-color: #252323f2;
 
-    .modal-content, .modal-dialog {
+    .modal-content, 
+    .modal-dialog {
         z-index: 10 !important;
         border-radius: 20px;
     }
