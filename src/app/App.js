@@ -20,10 +20,10 @@ function App() {
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
       <Navbar isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
       <Routes>
-        <Route path='/home' element={<Home isDarkMode={isDarkMode} />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/projects' element={<Projects />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/portfolio-jerome/home' index element={<Home isDarkMode={isDarkMode} />}></Route>
+        <Route path='/portfolio-jerome/about' element={<About />}></Route>
+        <Route path='/portfolio-jerome/projects' element={<Projects />}></Route>
+        <Route path='/portfolio-jerome/contact' element={<Contact />}></Route>
         <Route path='*' element={<Missing />}></Route>
       </Routes>
       <Footer />

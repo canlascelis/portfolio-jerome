@@ -11,8 +11,7 @@ export default function Model(props) {
   const { actions } = useAnimations(animations, group)
   const sayHello = props.hello;
 
-  let abortController = new AbortController()
-  let unmount = true;
+  let abortController = new AbortController();
   useEffect(() => {
     if (sayHello) {
       actions.hello.fadeIn(0.3).play();

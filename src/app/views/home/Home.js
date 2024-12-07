@@ -3,7 +3,7 @@ import Threejs from '../../components/Threejs/Threejs';
 import RecentProj1 from '../../../assets/images/calculator-jeres.png';
 import RecentProj2 from '../../../assets/images/game-preview.png';
 import Resume from '../../../assets/pdf/Jeremiah-Celis-Resume.pdf';
-import Rate from '../../components/Rate/Rate';
+// import Rate from '../../components/Rate/Rate';
 import ContactModal from '../../components/ContactModal/ContactModal';
 
 const Home = (props) => {

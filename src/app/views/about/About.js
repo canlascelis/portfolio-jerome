@@ -28,6 +28,12 @@ const About = () => {
             description: 'Interned at TwistResources as Agile Software Engineer and Graduated at UA',
             experience: 'Assisted in developing and developed some features of the website with the team',
             position: null
+        }, {
+            id: 5,
+            year: '2022 - 2024',
+            description: 'Working at Z-Getcare Systems Inc. as Jr. Web Developer',
+            experience: 'jQuery, Vue2, Typescript, XHTML ',
+            position: null
         }
     ]
     /* 

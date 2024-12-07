@@ -33,11 +33,13 @@ const RecentProject = () => {
             <div className="row justify-content-between project-img-wrapper">
                 {projects.map((project, i) => {
                     return (
-                        <figure className="col-lg-5 figure mb-5" key={i}>
-                            <img src={project.url} alt="projects-img" className="img-project" />
-                            <figcaption className="figure-caption mb-4"><a href={project.link}>{project.title}</a></figcaption>
-                            <figcaption className="figure-caption">{project.description}</figcaption>
-                        </figure>
+                        <div className='col-lg-5'>
+                            <figure className="figure mb-5" key={i}>
+                                <img src={project.url} alt="projects-img" className="img-project" />
+                                <figcaption className="figure-caption mb-4"><a href={project.link}>{project.title}</a></figcaption>
+                                <figcaption className="figure-caption">{project.description}</figcaption>
+                            </figure>
+                        </div>
                     )
                 })}
             </div>
